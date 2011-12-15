@@ -30,6 +30,12 @@ io.sockets.on('connection', function(socket) {
 		socket.broadcast.emit(data.name, data.data);
 	});
 
+	/**
+	 * announcing to everyone!
+	 */
+	socket.on('announce', function(data) {
+		io.sockets.emit('announced', data);
+	});
 
 	
 	/**
