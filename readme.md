@@ -32,6 +32,6 @@ this.socket = io.connect('http://localhost:'+port, {...
 
 - if you need more logging serverside, just uncomment "io.set('log level', 1);" in impactConnectServer.js
 
+- added announce method
 
-
-
+- added notification manager from Abraham Walters to announce to everyone
